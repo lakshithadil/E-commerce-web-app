@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     "django_filters",
     "rest_framework",
     "djoser",
+    "whitenoise.runserver_nostatic",
     "playground",
     "debug_toolbar",
     "store",
