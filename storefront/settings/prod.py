@@ -1,7 +1,7 @@
 import os
 from .common import *
 
-DEBUG = True
+DEBUG = False
 
 SECRET_KEY = os.environ["SECRET_KEY"]
 
@@ -15,7 +15,6 @@ CSRF_TRUSTED_ORIGINS = (
 )
 
 MIDDLEWARE = [
-    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
