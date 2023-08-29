@@ -1,7 +1,7 @@
 import os
 from .common import *
 
-DEBUG = False
+DEBUG = True
 
 SECRET_KEY = os.environ["SECRET_KEY"]
 
@@ -13,6 +13,7 @@ CSRF_TRUSTED_ORIGINS = (
     if "WEBSITE_HOSTNAME" in os.environ
     else []
 )
+
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.sessions",
