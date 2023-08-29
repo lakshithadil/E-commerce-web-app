@@ -1,4 +1,4 @@
-delete * from store_collection;
+delete from store_collection;
 
 insert into
   store_collection (id, title, featured_product_id)
