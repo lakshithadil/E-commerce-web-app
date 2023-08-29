@@ -13,6 +13,22 @@ CSRF_TRUSTED_ORIGINS = (
     if "WEBSITE_HOSTNAME" in os.environ
     else []
 )
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.sessions",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "django_filters",
+    "rest_framework",
+    "djoser",
+    "playground",
+    "store",
+    "tags",
+    "likes",
+    "core",
+]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
