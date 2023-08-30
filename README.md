@@ -30,8 +30,8 @@ The API provides the following endpoints:
 - Carts: [GET, POST, PUT, DELETE] `/store/carts/`
 - Customer: [GET, PUT] `/store/customer/`
 - Orders: [GET, POST] `/store/orders/`
-
-Note: we will add full details of the available endpoints future soon.
+  
+Note: we will add full details about the available endpoints soon.
 
 ## Deployment
 
