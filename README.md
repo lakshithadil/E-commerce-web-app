@@ -13,7 +13,6 @@ This repository contains the backend code for an e-commerce web app built using 
 - [Database](#database)
 - [Tools Used](#tools-used)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -32,6 +31,7 @@ The API provides the following endpoints:
 - Customer: [GET, PUT] `/store/customer/`
 - Orders: [GET, POST] `/store/orders/`
 
+Note: we will add full details of the available endpoints future soon.
 
 ## Deployment
 
