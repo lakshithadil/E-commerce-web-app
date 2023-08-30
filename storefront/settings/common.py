@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "djoser",
     "playground",
+    "debug_toolbar",
     "store",
     "tags",
     "likes",
