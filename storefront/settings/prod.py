@@ -1,7 +1,7 @@
 import os
 from .common import *
 
-DEBUG = False
+# DEBUG = False
 
 SECRET_KEY = os.environ["SECRET_KEY"]
 
