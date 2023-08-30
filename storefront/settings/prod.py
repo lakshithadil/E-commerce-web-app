@@ -1,15 +1,13 @@
 import os
 from .common import *
 
-# DEBUG = False
+DEBUG = False
 
 SECRET_KEY = os.environ["SECRET_KEY"]
 
-ALLOWED_HOSTS = ["co-shop.azurewebsites.net"]
-
-# ALLOWED_HOSTS = (
-#     [os.environ["WEBSITE_HOSTNAME"]] if "WEBSITE_HOSTNAME" in os.environ else []
-# )
+ALLOWED_HOSTS = (
+    [os.environ["WEBSITE_HOSTNAME"]] if "WEBSITE_HOSTNAME" in os.environ else []
+)
 CSRF_TRUSTED_ORIGINS = (
     ["https://" + os.environ["WEBSITE_HOSTNAME"]]
     if "WEBSITE_HOSTNAME" in os.environ
@@ -44,8 +42,16 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+# STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
+STORAGES = {
+    # ...
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 
 DATABASES = {
