@@ -63,6 +63,7 @@ The app uses MySQL as the database. You can find the database schema and models 
 - Python
 - Django
 - Django Rest Framework
+- Django ORM (Object-Relational Mapping)
 - Djoser (User registration and authentication)
 - JWT web tokens
 - MySQL (Database)
