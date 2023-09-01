@@ -31,7 +31,7 @@ The API provides the following endpoints:
 - Customer: [GET, PUT] `/store/customer/`
 - Orders: [GET, POST] `/store/orders/`
   
-Note: we will add full details about the available endpoints soon.
+Note: We will add full details about the available endpoints soon.
 
 ## Deployment
 
